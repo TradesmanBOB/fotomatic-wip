@@ -35,65 +35,61 @@ body {
 header {
   background-color: white;
   height: 5.3125rem;
-  display: flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1.875rem;
   width: 100%;
+}
+
+header a {
+  color: var(--4aColor);
+  text-decoration: none;
+}
+
+header .nav-content {
+  display: flex;
+  height: 100%;
+}
+
+header .nav-content a.desktop-logo {
+  font-size: 1.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-family: "Roboto-Mono-Regular", serif;
 }
 
 header .desktop {
-  flex: none;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  width: 100%;
-}
-
-header nav {
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
+  width: 100%;
 
 }
 
-header nav ul {
+header .desktop ul {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  list-style-type: none;
-  margin: 0;
+  font-size: 1rem;
+  color: var(--4aColor);
+  font-family: "Roboto-Regular", serif;
+  line-height: 1.6;
 }
 
-.desktop ul li {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 8rem;
-}
-
-.desktop ul .instagram-li a {
+.desktop ul li a {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
-
+  gap: 1.5rem;
 }
-
-.desktop ul li p {
-  margin: 0;
-  margin-right: 1rem;
-}
-
-.desktop ul li a img{
-  width: 20%;
-  height: auto;
-  margin-left: 1rem;
-}
-
 
 /* navigation imagery sizing */
 
+.instagram-li a img{
+  display: flex;
+  width: 1.5rem;
+  height: auto;
+}
 
 
 /* End of Root */
