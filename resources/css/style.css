@@ -74,7 +74,8 @@ html {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 895px) {
+/* 895px default */
+@media only screen and (max-width: 768px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -138,7 +139,8 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 895px) {
+/* 895px default */
+@media only screen and (max-width: 768px) {
   nav :last-child {
     display: block;
   }
@@ -148,7 +150,8 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* 600px default */
+@media only screen and (max-width: 768px) {
   header .desktop {
     display: none;
   }
@@ -180,7 +183,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url("/resources/images/banner-landingpage.jpg");
+  background-image: url("../images/banner-landingpage.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -231,7 +234,8 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 895px) {
+/* 895px default */
+@media only screen and (max-width: 768px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -263,7 +267,8 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 600) {
+/* 600px default */
+@media only screen and (max-width: 768px) {
   #sign-up-section{
     height: 20rem;
   }
@@ -317,7 +322,8 @@ font-size: var(--fsize9);
   color: var(--4aColor);
 }
 
-@media only screen and (max-width: 895px) {
+/* 895px default */
+@media only screen and (max-width: 768px) {
   #features-section {
     padding: 1rem;
   } 
@@ -338,7 +344,8 @@ font-size: var(--fsize9);
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* 600px default */
+@media only screen and (max-width: 768px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -385,7 +392,8 @@ font-size: var(--fsize9);
   padding: 0 1%;
 }
 
-@media only screen and (max-width: 600px) {
+/* 600px default */
+@media only screen and (max-width: 768px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -441,13 +449,15 @@ font-size: var(--fsize9);
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 895px) {
+/* 895px default */
+@media only screen and (max-width: 768px) {
   #quotes-section .content {
     padding: 3rem 1.5rem;
   }
 }
 
-@media only screen and (max-width) {
+/* 600px default */
+@media only screen and (max-width: 768px) {
   #quotes-section .content {
     flex-flow: column;
     padding: 1.875rem .625rem;
@@ -462,5 +472,29 @@ font-size: var(--fsize9);
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: var(--9bColor);
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+color: white;
+display: flex;
+font-size: var(--fsize2);
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+/* 600px default */
+@media only screen and (max-width: 768px) {
+  footer .content {
+    font-size: var(--fsize1);
   }
 }
